@@ -32,42 +32,14 @@ block content_block
 					h2 НАШИ ПРОЕКТЫ
 				.project_list 
 					ul
-						li 
-							.project_list_img 
-								img(src="i/project/project1.png", alt="")
-							.project_list_txt 
-								p Название кухни
-								span от 50 000 руб.
-						li 
-							.project_list_img 
-								img(src="i/project/project1.png", alt="")
-							.project_list_txt 
-								p Название кухни
-								span от 50 000 руб.
-						li 
-							.project_list_img 
-								img(src="i/project/project1.png", alt="")
-							.project_list_txt 
-								p Название кухни
-								span от 50 000 руб.
-						li 
-							.project_list_img 
-								img(src="i/project/project1.png", alt="")
-							.project_list_txt 
-								p Название кухни
-								span от 50 000 руб.
-						li 
-							.project_list_img 
-								img(src="i/project/project1.png", alt="")
-							.project_list_txt 
-								p Название кухни
-								span от 50 000 руб.
-						li 
-							.project_list_img 
-								img(src="i/project/project1.png", alt="")
-							.project_list_txt 
-								p Название кухни
-								span от 50 000 руб.
+						- for (var i = 0; i < 6; i++)
+							li 
+								.project_list_img 
+									img(src="i/project/project1.png", alt="")
+									span Подробнее
+								.project_list_txt 
+									p Название кухни
+									span от 50 000 руб.
 				.project_btn 
 					button(type="button") Показать больше
 	section.sale 

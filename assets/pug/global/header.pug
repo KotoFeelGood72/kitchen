@@ -6,23 +6,11 @@ header.header
 					img(src="i/logo.svg", alt="") 
 			.header_menu 
 				ul
-					li 
-						a(href="#") Проекты
-					li 
-						a(href="#") Преимущества
-					li 
-						a(href="#") О нас
-					li 
-						a(href="#") Этапы работы
-					li 
-						a(href="#") FAQ
-					li 
-						a(href="#") Отзывы
-					li 
-						a(href="#") Контакты
+					each item in ['Проекты', 'Преимущества', 'О нас', 'Этапы работы', 'FAQ', 'Отзывы', 'Контакты']
+						li 
+							a(href="#")=item 
 			.header_mobil 
-				a(href="#") 
-					p +7 (927) 466-33-39
+				a(href="#" class="yellow") +7 (927) 466-33-39
 
 
 

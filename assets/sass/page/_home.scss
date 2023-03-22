@@ -30,6 +30,7 @@
 	h1 {
 		line-height: 5.3rem;
 		margin-bottom: 2rem;
+		@include accent-link;
 	}
 	p {
 		color: $white;
@@ -42,10 +43,10 @@
 		padding: 2.2rem 6rem;
 		border-radius: 1rem;
 		box-shadow: 0 1.9rem 6rem rgba(255, 222, 89, 0.3);
+		transition: all .4s ease;
 		&:hover {
 			background: $gold;
 			box-shadow: 0 1.9rem 6rem rgba(255, 222, 89, 0.3);
-			transition: all .4s;
 		}
 	}
 }
@@ -98,6 +99,36 @@
 .project_list_img {
 	position: relative;
 	margin-bottom: 2rem;
+	cursor: pointer;
+	border-radius: 1rem;
+	overflow: hidden;
+	&:hover {
+		&:before, span {
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+
+	&:before, span {
+		opacity: 0;
+		visibility: hidden;
+		width: 100%;
+		height: 100%;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		position: absolute;
+		transition: all .3s ease;
+		pointer-events: none;
+		content: '';
+		@include flex-center;
+	}
+	&:before {
+		background-color: rgba(27, 27, 27, 0.5);
+	}
+	span {
+		 color: $white;
+	}
 	img {
 		border-radius: 1rem;
 		&:hover {
@@ -106,6 +137,8 @@
 		}
 	}
 }
+
+
 // .project_btn_more {
 // 	position: absolute;
 // 	top: 0;
