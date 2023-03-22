@@ -1,0 +1,273 @@
+extends _layout
+
+block vars
+	- array = {body_class:'', layout_mod:'', sub_keywords:'', title_inner:'HOME'}
+block content_block
+	section.hero 
+		.section_in 
+			.hero_main 
+				.hero_main_txt 
+					h1 СОЗДАЕМ КУХНИ <br> ПО ВАШИМ ПОЖЕЛАНИЯМ
+					p Замер, сборка, доставка и установка всегда по Казани БЕСПЛАТНО! <br>Используем качественные материалы и фурнитуру, что гарантирует вам мебели.
+				.hero_main_btn 
+					button(type="button") Оставить заявку
+				.hero_main_social 
+					ul 
+						li
+							.hero_social_wh
+								a(href="#") 
+									img(src="i/icons/watop.svg", alt="")
+						li 
+							.hero_social_vk
+								a(href="#") 
+									img(src="i/icons/vktop.svg", alt="")
+						li
+							.hero_social_tg
+								a(href="#") 
+									img(src="i/icons/tgtop.svg", alt="")
+	section.project 
+		.section_in 
+			.project_main 
+				.project_head 
+					h2 НАШИ ПРОЕКТЫ
+				.project_list 
+					ul
+						li 
+							.project_list_img 
+								img(src="i/project/project1.png", alt="")
+							.project_list_txt 
+								p Название кухни
+								span от 50 000 руб.
+						li 
+							.project_list_img 
+								img(src="i/project/project1.png", alt="")
+							.project_list_txt 
+								p Название кухни
+								span от 50 000 руб.
+						li 
+							.project_list_img 
+								img(src="i/project/project1.png", alt="")
+							.project_list_txt 
+								p Название кухни
+								span от 50 000 руб.
+						li 
+							.project_list_img 
+								img(src="i/project/project1.png", alt="")
+							.project_list_txt 
+								p Название кухни
+								span от 50 000 руб.
+						li 
+							.project_list_img 
+								img(src="i/project/project1.png", alt="")
+							.project_list_txt 
+								p Название кухни
+								span от 50 000 руб.
+						li 
+							.project_list_img 
+								img(src="i/project/project1.png", alt="")
+							.project_list_txt 
+								p Название кухни
+								span от 50 000 руб.
+				.project_btn 
+					button(type="button") Показать больше
+	section.sale 
+		.section_in 
+			.sale_main
+				.sale_main_left 
+					img(src="i/saleLeft.png", alt="") 
+				.sale_main_right
+					.sale_head 
+						h2 Акция! 20% скидка на кухни
+						p Оставьте заявку, и мы свяжемся с вами в ближайшее время, чтобы обсудить все условия. 
+					.sale_main_form
+						form.sale_form
+						.sale_form_input
+							input(type="text" placeholder="Ваше имя")
+						.sale_form_input
+							input(type="tel" placeholder="Ваш телефон")
+						.sale_main_form_bottom
+							.sale_form_btn 
+								button(type="submit") Отправить
+							.sale_policy!='Отправляя форму, вы соглашаетесь с <a href="#"> политикой конфиденциальности.</a>'
+	section.advantages
+		.section_in 
+			.advantages_main 
+				.advantages_head 
+					h2 НАШИ ПРЕИМУЩЕСТВА
+				.advantages_content 
+					ul 
+						li 
+							.advantages_content_img 
+								img(src="i/icons/ok.svg", alt="")
+							.advantages_content_txt 
+								p Выгода для клиента
+								span Замер, сборка, доставка и установка по Казани всегда БЕСПЛАТНО.
+						li 
+							.advantages_content_img 
+								img(src="i/icons/brush.svg", alt="")
+							.advantages_content_txt 
+								p Индивидуальные проекты
+								span Работаем только по индивидуальным проектам. Сделаем вашу мечту реальностью!
+						li 
+							.advantages_content_img 
+								img(src="i/icons/gear.svg", alt="")
+							.advantages_content_txt 
+								p Собственное производство
+								span Неограниченный полет фантазии в реализации любых проектов.
+						li 
+							.advantages_content_img 
+								img(src="i/icons/materials.svg", alt="")
+							.advantages_content_txt 
+								p Качественные материалы
+								span Мы гарантируем клиентам долговечность мебели.
+						li 
+							.advantages_content_img 
+								img(src="i/icons/treaty.svg", alt="")
+							.advantages_content_txt 
+								p Работаем по договору
+								span Вы можете ознакомиться с образцом договора до заключения сделки.
+						li 
+							.advantages_content_img 
+								img(src="i/icons/money.svg", alt="")
+							.advantages_content_txt 
+								p Рассрочка 0%
+								span Мы предлагаем внутреннюю рассрочку без участия банка.
+	section.company 
+		.section_in 
+			.company_main 
+				.company_main_left 
+					.company_head 
+						h2 О КОМПАНИИ
+					.company_info 
+						p В ассортименте компании «А:S КУХНИ» вы найдете именно ту продукцию, которая вам нужна, причем высшего качества и по справедливой цене. За годы присутствия на рынке мы накопили обширный опыт, который помогает внимательно и эффективно обслуживать клиентов, заботясь о том, чтобы им все нравилось.
+						p Обращаясь к нам, вы всегда можете рассчитывать на высокое качество продукции и первоклассный сервис на всех этапах взаимодействия независимо от того, покупаете вы дорогую кухню или всего одно изделие. Ознакомьтесь с нашими ассортиментом. Свяжитесь с нами, если вам нужна помощь в поиске конкретного продукта.
+					.company_btn 
+						button(type="button") Оставить заявку
+				.company_main_right 
+					img(src="i/company/company1.png", alt="")
+	section.stages
+		.section_in
+			.stages_main 
+				.stages_main_head 
+					h2 ЭТАПЫ РАБОТЫ
+				.stages_main_content 
+					ul
+						li 
+							.stages_main_txt 
+								p Замер кухни
+								span Замер помогает учесть такие нюансы, как выступы, батареи, трубы. Замер площади.
+						li 
+							.stages_main_txt 
+								p Дизайн
+								span Создаем дизайн, выбираем стиль. Определяем размещение техники.
+						li 
+							.stages_main_txt 
+								p Цвет, фурнитура
+								span Выбираем цветовую гамму и фурнитуру.
+						li 
+							.stages_main_txt 
+								p 3D проект
+								span Готовый 3D проект передается клиенту на утверждение.
+						li 
+							.stages_main_txt 
+								p Реализация
+								span Изготовление кухни.
+						li
+							.stages_main_txt 
+								p Доставка
+								span Доставка, сборка и установка кухни.
+	section.answers
+		.section_in 
+			.answers_main
+				.answers_head 
+					h2 ОТВЕТЫ НА ВОПРОСЫ
+				.answers_main_info 
+					ul 
+						-for(i = 0; i < 4; i++)
+							li.answers_item 
+								.answers_item_head
+									h4 Lorem ipsum dolor sit amet, consectetur adipiscing
+									.answers_btn
+										button(type="button")
+											img(src="i/icons/arrowbottom.svg", alt="") 
+								.qanswers_item_bottom
+									p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+	section.consultation
+		.section_in 
+			.consultation_main
+				.consultation_main_left 
+					.consultation_head 
+						h2 Бесплатная консультация
+						p Оставьте заявку, и мы свяжемся с вами в ближайшее время, чтобы обсудить все условия. 
+					.consultation_main_form
+						form.consultation_form
+						.consultation_form_input
+							input(type="text" placeholder="Ваше имя")
+						.consultation_form_input
+							input(type="tel" placeholder="Ваш телефон")
+						.consultation_form_btn 
+							button(type="submit") Отправить
+						.consultation_policy!='Отправляя форму, вы соглашаетесь с <a href="#"> политикой конфиденциальности.</a>'
+				.consultation_main_right 
+					img(src="i/consultationRight.png", alt="")
+	section.reviews
+		.section_in 
+			.reviews_main 
+				.reviews_head 
+					h2 ОТЗЫВЫ КЛИЕНТОВ
+				.reviews_slider_nav 
+					.reviews_slider_btn_prewios 
+						button(type="button")
+							+icon('previous')
+					.reviews_slider_btn_next 
+						button(type="button")
+							+icon('next')
+			.reviews_slider_w
+				.reviews_slider.swiper 
+					.swiper-wrapper
+						-for(i = 0; i < 8; i++)
+							.swiper-slide 
+								.reviews_slide
+									h3 Имя Фамилия
+									span 13.03.2023
+									p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+	section.contact 
+		.section_in 
+			.contact_main 
+				.contact_main_left 
+					.contact_left_head 
+						h2 НАШИ КОНТАКТЫ
+					.contact_left_info 
+						ul 
+							li 
+								.contact_mobil
+									a(href="#")  
+										+icon('call')
+										p +7 (927) 466-33-39
+							li 
+								.contact_mail 
+									a(href="#")
+										+icon('mail')
+										p mail@mail.ru
+							li 
+								.contact_addres 
+									+icon('mapmark')
+									p Ул. Владимира Кулагина 9с9, Казань
+					.contact_left_social 
+						ul 
+							li 
+								.contact_wh 
+									a(href="#")
+										img(src="i/icons/wabottom.svg", alt="") 
+							li 
+								.contact_vk 
+									a(href="#")
+										img(src="i/icons/vkbottom.svg", alt="") 
+							li 
+								.contact_tg 
+									a(href="#")
+										img(src="i/icons/tgbottom.svg", alt="")
+				.contact_main_right 
+					.contact_map 
+						<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A927e52524f44c2cca3f4fe07d669ae5bfa7f48ba3ab4540d7106fe54b3b494c7&amp;width=675&amp;height=410&amp;lang=ru_RU&amp;scroll=true"></script>
+	
